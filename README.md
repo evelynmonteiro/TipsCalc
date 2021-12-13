@@ -40,7 +40,6 @@ Users should be able to:
 
 <p>
     <img alt="Mobile TipsCalc Interface" title="MobileTipsCalc" src="design/Final/TipsCalc-Mobile.gif" width="250px" height="515">
-    <img alt="Mobile TipsCalc Interface" title="MobileTipsCalc" src="design/Final/Mobile-Final-View.png" width="250px" height="515">
 </p>
 
 ### Link
