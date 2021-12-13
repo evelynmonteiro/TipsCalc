@@ -45,7 +45,7 @@ Users should be able to:
 
 ### Link
 
-- Live Site URL: [Click here!](https://your-live-site-url.com)
+- Live Site URL: [Click here!](https://tipscalcevemon.netlify.app/)
 
 <br>
 
