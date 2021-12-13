@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Style-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>TipsCalc</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <span>TIPS</span>
+        <span>CALC</span>
+      </h1>
+
+      <div class="tips-calc-container">
+        <div class="calc-container">
+          <div class="calc-box">
+            <div class="title-container">
+              <label for="bill">Bill</label>
+            </div>
+            <div class="input-container">
+              <span class="input-icon"
+                ><img src="images/icon-dollar.svg"
+              /></span>
+              <input
+                type="text"
+                inputmode="numeric"
+                id="bill"
+                class="input fields-input"
+                placeholder="0"
+                size="12"
+                onkeyup="moneyMask(this)"
+              />
+            </div>
+          </div>
+
+          <div class="calc-box">
+            <div class="title-container">
+              <h3>Select Tip %</h3>
+            </div>
+            <div class="btns-tip">
+              <button class="tip-btn" data-tip="5">5%</button>
+              <button class="tip-btn" data-tip="10">10%</button>
+              <button class="tip-btn" data-tip="15">15%</button>
+              <button class="tip-btn" data-tip="25">25%</button>
+              <button class="tip-btn" data-tip="50">50%</button>
+              <input
+                type="number"
+                placeholder="Custom"
+                class="input custom-tip-input"
+                id="custom"
+              />
+            </div>
+          </div>
+
+          <div class="calc-box">
+            <div class="title-container">
+              <label for="numberPeople">Number of People</label>
+              <span class="alert-message hidden" id="cantZero">Can't be 0</span>
+            </div>
+            <div class="input-container">
+              <span class="input-icon"
+                ><img src="images/icon-person.svg"
+              /></span>
+              <input
+                type="number"
+                value="1"
+                id="numberPeople"
+                class="input fields-input"
+                placeholder="0"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="result-container">
+          <div class="result-box">
+            <div class="title">
+              <h3>Tip Amount</h3>
+              <span>/ person</span>
+            </div>
+            <div class="amount">
+              <p id="tipAmount">$0,00</p>
+            </div>
+          </div>
+          <div class="result-box">
+            <div class="title">
+              <h3>Total</h3>
+              <span>/ person</span>
+            </div>
+            <div class="amount">
+              <p id="totalAmount">$0,00</p>
+            </div>
+          </div>
+          <button class="reset-btn disable" id="resetBtn">RESET</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Evelyn Monteiro</a>.
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
